@@ -1,0 +1,56 @@
+ul.portfolio-content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-content li {
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.port-left{
+    flex-basis: 60%;
+}
+
+.port-left a {
+    color: orange;
+}
+
+.port-right {
+    flex-basis: 40%;
+    background-image: url(../img/github-logo.png);
+}
+
+.portfolio-area p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+
+.portfolio-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+@media(max-width: 1000px){
+    .port-left,
+    .port-right {
+        flex-basis: 100%;
+    }
+    .portfolio-content li{
+        padding: 8px;
+    }
+}
